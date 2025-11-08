@@ -3,7 +3,7 @@ import { LuSend } from "react-icons/lu";
 import FadeContent from "../Common/FadeContent";
 
 const Contact = () => {
-  const [state, handleSubmit] = useForm("YOUR_FORM_ID");
+  const [state, handleSubmit] = useForm("mjkjbrka");
 
   return (
     <section
