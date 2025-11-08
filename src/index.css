@@ -1,0 +1,44 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-geist: "Geist", sans-serif;
+  --color-primary: #ff47f0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-geist);
+  font-weight: 500;
+  scroll-behavior: smooth;
+  color: white;
+  /* @apply bg-linear-to-br from-black to-purple-800; */
+  background-color: #060010;
+}
+
+/* Custom Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-[#060010];
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-white rounded;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply cursor-grab;
+}
